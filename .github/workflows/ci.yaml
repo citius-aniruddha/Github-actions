@@ -1,0 +1,22 @@
+name: Hello World Workflow
+
+on: 
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Printing a greet
+        run: echo "Hello hwo are you from github actions"
+      
+      - name: show date and dir
+        run: |  
+          echo "Today is: $(date)"
+          echo: "I am run in $(pwd)"
+          ls -la
