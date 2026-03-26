@@ -18,5 +18,5 @@ jobs:
       - name: show date and dir
         run: |  
           echo "Today is: $(date)"
-          echo: "I am run in $(pwd)"
+          echo "I am run in $(pwd)"
           ls -la
